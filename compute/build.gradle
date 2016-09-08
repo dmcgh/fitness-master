@@ -1,0 +1,12 @@
+apply plugin: 'spring-boot'
+
+jar {
+    baseName = 'web'
+    version = '0.0.1-SNAPSHOT'
+}
+
+dependencies {
+    compile project(':data')
+    compile('org.springframework.boot:spring-boot-starter-amqp')
+    compile('org.springframework.boot:spring-boot-starter-web')
+}
